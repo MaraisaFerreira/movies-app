@@ -8,7 +8,6 @@ const form = document.querySelector('#form');
 const search = document.querySelector('#search');
 const main = document.querySelector('#main');
 
-//obt os filmes da API
 getMovies(API_URL);
 
 async function getMovies(url) {
@@ -18,7 +17,6 @@ async function getMovies(url) {
 	showMovies(data.results);
 }
 
-//exibe os filmes na DOM
 function showMovies(movies) {
 	main.innerHTML = '';
 
